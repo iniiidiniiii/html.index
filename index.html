@@ -68,6 +68,38 @@
             width: 100%;
             bottom: 0;
         }
+
+        section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contact input, #contact textarea {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        #contact input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #contact input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -75,46 +107,76 @@
         <h1>Bienvenue à la Vente de Légumes</h1>
         <nav>
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Nos Produits</h2>
+        <section id="accueil">
+            <h2>Bienvenue à notre boutique de légumes!</h2>
+            <p>Nous proposons une large gamme de légumes frais à des prix compétitifs. Nous nous engageons à vous fournir les meilleurs produits directement de la ferme à votre table. Découvrez nos légumes de saison et profitez d'offres spéciales chaque mois!</p>
+        </section>
 
-        <!-- Produit 1: Carotte -->
-        <div class="product-item">
-            <img src="https://i.imgur.com/wsOSkLD.jpg" alt="Carotte">
-            <p>Carotte</p>
-            <p>2 Euro / kg</p>
-        </div>
+        <section id="produits">
+            <h2>Nos Produits</h2>
 
-        <!-- Produit 2: Tomate -->
-        <div class="product-item">
-            <img src="https://i.imgur.com/m4Pldmn.jpg" alt="Tomate">
-            <p>Tomate</p>
-            <p>5 Euro / kg</p>
-        </div>
+            <!-- Produit 1: Carotte -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/wsOSkLD.jpg" alt="Carotte">
+                <p>Carotte</p>
+                <p>2 Euro / kg</p>
+            </div>
 
-        <!-- Produit 3: Brocoli -->
-        <div class="product-item">
-            <img src="https://i.imgur.com/KVbY85Y.jpg" alt="Brocoli">
-            <p>Brocoli</p>
-            <p>4,25 Euro / kg</p>
-        </div>
+            <!-- Produit 2: Tomate -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/KVbY85Y.jpg" alt="Tomate">
+                <p>Tomate</p>
+                <p>5 Euro / kg</p>
+            </div>
 
-        <!-- Produit 4: Laitue -->
-        <div class="product-item">
-            <img src="https://i.imgur.com/XdqbkyE.jpg" alt="Laitue">
-            <p>Laitue</p>
-            <p>6 Euro / kg</p>
-        </div>
-        
-        <h2>Les Légumes à Bon Prix!</h2>
-        <p>Nous offrons des légumes frais et de haute qualité à des prix abordables pour tout le monde!</p>
+            <!-- Produit 3: Brocoli -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/3v3gh6H.jpg" alt="Brocoli">
+                <p>Brocoli</p>
+                <p>4,25 Euro / kg</p>
+            </div>
+
+            <!-- Produit 4: Laitue -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/QgywOXH.jpg" alt="Laitue">
+                <p>Laitue</p>
+                <p>6 Euro / kg</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contactez-Nous</h2>
+            <p>Vous avez des questions ou des préoccupations? N'hésitez pas à nous contacter! Nous serons heureux de vous répondre dans les plus brefs délais.</p>
+
+            <h3>Informations de Contact</h3>
+            <ul>
+                <li><strong>Adresse:</strong> 123 Rue des Légumes, Paris, France</li>
+                <li><strong>Téléphone:</strong> +33 1 23 45 67 89</li>
+                <li><strong>Email:</strong> contact@ventedolegumes.fr</li>
+            </ul>
+
+            <h3>Formulaire de Contact</h3>
+            <form action="#" method="POST">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
     </main>
 
     <footer>
