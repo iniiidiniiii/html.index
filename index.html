@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vente de Légumes</title>
+    <title>Ma Page Web</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,23 +42,6 @@
             border-radius: 5px;
         }
 
-        .product-item {
-            display: inline-block;
-            width: 30%;
-            text-align: center;
-            margin: 15px;
-            padding: 10px;
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .product-item img {
-            width: 100%;
-            height: auto;
-            max-width: 150px;
-        }
-
         footer {
             background-color: #4CAF50;
             color: white;
@@ -68,55 +51,70 @@
             width: 100%;
             bottom: 0;
         }
+
+        .produit {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .produit img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .produit .details {
+            margin-left: 20px;
+        }
+
+        .produit .details p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue à la Vente de Légumes</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Produits</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Bienvenue sur notre magasin de légumes</h1>
     </header>
 
     <main>
-        <h2>Nos Produits</h2>
+        <section class="produit">
+            <img src="https://i.imgur.com/1ekv3Fe.jpg" alt="Carotte (Wortel)">
+            <div class="details">
+                <p>Carotte</p>
+                <p>Prix: 2 Euro</p>
+            </div>
+        </section>
 
-        <!-- Produit 1: Carotte -->
-        <div class="product-item">
-            <img src="https://i.imgur.com/wsOSkLD.jpg" alt="Carotte">
-            <p>Carotte</p>
-            <p>2 Euro / kg</p>
-        </div>
+        <section class="produit">
+            <img src="https://i.imgur.com/0ETm5fP.jpg" alt="Laitue (Selada)">
+            <div class="details">
+                <p>Laitue</p>
+                <p>Prix: 6 Euro</p>
+            </div>
+        </section>
 
-        <!-- Produit 2: Tomate -->
-        <div class="product-item">
-            <img src="https://i.imgur.com/KVbY85Y.jpg" alt="Tomate">
-            <p>Tomate</p>
-            <p>5 Euro / kg</p>
-        </div>
+        <section class="produit">
+            <img src="https://i.imgur.com/0ETm5fP.jpg" alt="Brocoli">
+            <div class="details">
+                <p>Brocoli</p>
+                <p>Prix: 4,25 Euro</p>
+            </div>
+        </section>
 
-        <!-- Produit 3: Brocoli -->
-        <div class="product-item">
-            <img src="https://i.imgur.com/3v3gh6H.jpg" alt="Brocoli">
-            <p>Brocoli</p>
-            <p>4,25 Euro / kg</p>
-        </div>
+        <section class="produit">
+            <img src="https://i.imgur.com/1ekv3Fe.jpg" alt="Tomate">
+            <div class="details">
+                <p>Tomate</p>
+                <p>Prix: 5 Euro</p>
+            </div>
+        </section>
 
-        <!-- Produit 4: Laitue -->
-        <div class="product-item">
-            <img src="https://i.imgur.com/1ekv3Fe.jpg" alt="Laitue (Selada)">
-        </div>
-        
-        <h2>Les Légumes à Bon Prix!</h2>
-        <p>Nous offrons des légumes frais et de haute qualité à des prix abordables pour tout le monde!</p>
     </main>
 
     <footer>
-        <p>Copyright &copy; 2025 Vente de Légumes</p>
+        <p>Copyright &copy; 2025</p>
     </footer>
 </body>
 </html>
