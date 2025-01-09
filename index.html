@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Page Web</title>
+    <title>Store de Vente des Légumes</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,6 +42,35 @@
             border-radius: 5px;
         }
 
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 150px;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-item p {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
         footer {
             background-color: #4CAF50;
             color: white;
@@ -55,27 +84,45 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur ma page principale</h1>
+        <h1>Bienvenue à notre store de vente des légumes</h1>
         <nav>
             <ul>
                 <li><a href="#">Page principale</a></li>
-                <li><a href="#">Sous-page 1</a></li>
-                <li><a href="#">Sous-page 2</a></li>
+                <li><a href="#">Nos produits</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Contenu de la page principale</h2>
-        <p>Ceci est la page principale de mon site web.</p>
+        <h2>Nos légumes disponibles</h2>
         
-        <!-- Gambar yang ditambahkan -->
-        <img src="https://i.imgur.com/wsOSkLD.jpg" alt="Wortel">
-        <p>Wortel ini harganya 2 Euro per kg.</p>
+        <div class="product">
+            <!-- Produk 1: Wortel -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/wsOSkLD.jpg" alt="Wortel">
+                <p>Wortel</p>
+                <p>2 Euro / kg</p>
+            </div>
+
+            <!-- Produk 2: Tomat -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/wsOSkLD.jpg" alt="Tomat">
+                <p>Tomat</p>
+                <p>3 Euro / kg</p>
+            </div>
+
+            <!-- Produk 3: Brokoli -->
+            <div class="product-item">
+                <img src="https://i.imgur.com/wsOSkLD.jpg" alt="Brokoli">
+                <p>Brokoli</p>
+                <p>2.5 Euro / kg</p>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <p>Copyright &copy; Youssef Fetouh 2025</p>
+        <p>Copyright &copy; Store des Légumes 2025</p>
     </footer>
 </body>
 </html>
